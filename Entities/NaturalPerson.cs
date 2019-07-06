@@ -8,6 +8,8 @@ namespace IncomeTax.Entities
     {
         public double HealthSpending { get; set; }
 
+        public NaturalPerson() { }
+
         public NaturalPerson(string name, double income, double healthSpending) 
             : base(name, income)
         {

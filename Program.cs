@@ -46,10 +46,11 @@ namespace IncomeTax
             foreach (Person x in persons) {
                 Console.WriteLine($"{x.Name}: ${x.TaxCalc().ToString("F2", CultureInfo.InvariantCulture)}");
 
-                totaltax =+ x.TaxCalc();
+                totaltax += x.TaxCalc();
             }
 
-            Console.WriteLine("Total taxes: " + totaltax);
+            Console.WriteLine();
+            Console.WriteLine("TOTAL TAXES: $" + totaltax.ToString("F2", CultureInfo.InvariantCulture));
         }
     }
 }

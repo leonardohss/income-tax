@@ -8,6 +8,8 @@ namespace IncomeTax.Entities
     {
         public int NumEmployees { get; set; }
 
+        public LegalPerson() { }
+
         public LegalPerson(string name, double income, int numEmployees) 
             : base(name, income)
         {
